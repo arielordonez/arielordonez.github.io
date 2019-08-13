@@ -1,0 +1,90 @@
+body {
+	background-color: #232323;
+	/*background-image: url("Bridge.jpg");*/
+	background-image: url(https://images.unsplash.com/photo-1524321405874-351c3cb5d301?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f4c981bdc0223184d1c67dd0b9e76275&auto=format&fit=crop&w=2267&q=80);
+	background-position: center;
+	background-size: cover;
+}
+h1 {
+	width:25%;
+	color: white;
+}
+
+html {
+	height: 100%;
+}
+
+#myPic {
+	width: 200px;
+	border-radius: 50%;
+	float: left;
+	margin: auto;
+}
+
+.navbar-header {
+	color: blue;
+}
+
+.contentBody {
+	background-color: rgba(5,5,5,0.5);
+	color: red;
+}
+
+.content {
+	color: white;
+	background-color: rgba(5,5,5,0.5);
+	padding:5%;
+	float: left;
+	margin: 1.66%;
+	position: relative;
+}
+
+/* Popup container */
+.popup {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    width: 80%;
+    background-color: rgba(5,5,5,0.5);/*#555;*/
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 12px/*8px 0*/;
+    position: relative;
+    z-index: 1;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: relative;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
